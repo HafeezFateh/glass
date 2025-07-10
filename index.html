@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body id="mybody" class="min-h-screen flex flex-col justify-center mx-20 bg-[url('/leaves.jpg')] bg-fixed bg-cover bg-center">
+  
+    <div class="flex flex-col gap-4 shadow-lg border border-slate-50/30 rounded-2xl p-10 bg-white/10 backdrop-blur-md ">
+        <p onclick="changeBg1()" class="shadow-md hover:shadow-xl hover:bg-slate-100/30 duration-500 transition-all  text-white font-semibold rounded-2xl bg-white/10 p-3 ">Nature Is Pure Water</p>
+        <p onclick="changeBg2()" class="shadow-md hover:shadow-xl hover:bg-slate-100/30 duration-500 transition-all  text-white font-semibold rounded-2xl bg-white/10 p-3 ">Babylonian Civilization</p>
+        <p onclick="changeBg4()" class="shadow-md hover:shadow-xl hover:bg-slate-100/30 duration-500 transition-all  text-white font-semibold rounded-2xl bg-white/10 p-3 ">The Ancient Rome</p>
+        <p onclick="changeBg3()" class="shadow-md hover:shadow-xl hover:bg-slate-100/30 duration-500 transition-all  text-white font-semibold rounded-2xl bg-white/10 p-3 ">The City Nights</p>
+    </div>
+
+    
+    
+    <script>
+        function changeBg1() {
+          const newImage = "./mobile.jpeg";
+          document.getElementById("mybody").style.backgroundImage = `url('${newImage}')`;
+        }
+        function changeBg2() {
+          const newImage = "./babylon.jpg";
+          document.getElementById("mybody").style.backgroundImage = `url('${newImage}')`;
+        }
+          function changeBg3() {
+          const newImage = "./city.jpg";
+          document.getElementById("mybody").style.backgroundImage = `url('${newImage}')`;
+        }
+          function changeBg4() {
+          const newImage = "./babylon2.jpg";
+          document.getElementById("mybody").style.backgroundImage = `url('${newImage}')`;
+        }
+    </script>
+
+</body> 
+</html>
